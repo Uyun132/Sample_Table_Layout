@@ -42,14 +42,18 @@ public class MainActivity extends AppCompatActivity {
                     if(nama.equals(sUser) && password.equals(sPass)) {
                         Toast t = Toast.makeText(getApplicationContext(), "Login Sukses!", Toast.LENGTH_LONG); //lengthlong?
                         t.show();
+
+                        //intent
+                        Intent i = new Intent(MainActivity.this,ActivityKedua.class);
+
                         // object bundle?
                         Bundle b = new Bundle();
-//                        //masukin string ke bundle untuk dikirim ke layout/activity lain dengan key yang ada
+                        //masukin string ke bundle untuk dikirim ke layout/activity lain dengan key yang ada
                         b.putString("a", nama.trim());
                         b.putString("b", password.trim());
-//                        //intent
-                        Intent i = new Intent(MainActivity.this,ActivityKedua.class);
-//                        //masukin bundle dan intent ke activity lain;
+
+
+                        //masukin bundle dan intent ke activity lain;
                         i.putExtras(b);
                         startActivity(i);
                     }else{
