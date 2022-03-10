@@ -13,7 +13,7 @@
             android:name=".ActivityKedua"
             android:label="@string/label2"
             android:parentActivityName=".MainActivity"
-            android:exported="true">
+            >
 
         </activity>
         <activity android:name=".MainActivity">
