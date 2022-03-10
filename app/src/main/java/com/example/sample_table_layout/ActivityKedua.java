@@ -13,17 +13,17 @@ public class ActivityKedua extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activit_kedua);
         //manggil id dari layout lain
-        txUser = (TextView) findViewById(R.id.tvUser); //R.id karena nyari id layout
-        txPassword = (TextView) findViewById(R.id.tvPass);
-
-        //ngambil kontent yg di dalam bundle, simpen ke variable
-        Bundle bundle = getIntent().getExtras();
-        String user = bundle.getString("a"); // ngambil bundle dengan key "a"
-        String password = bundle.getString("b");
-
-        //isi bundle dimasukan ke layout text
-        txUser.setText(user);
-        txPassword.setText(password);
+//        txUser.findViewById(R.id.tvUser); //R.id karena nyari id layout
+//        txPassword.findViewById(R.id.tvPass);
+//
+//        //ngambil kontent yg di dalam bundle, simpen ke variable
+//        Bundle bundle = getIntent().getExtras();
+//        String user = bundle.getString("a"); // ngambil bundle dengan key "a"
+//        String password = bundle.getString("b");
+//
+//        //isi bundle dimasukan ke layout text
+//        txUser.setText(user);
+//        txPassword.setText(password);
         //Jangan lupa daftarin layouttnya ke androidmanifest!
     }
 }
