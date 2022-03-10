@@ -57,7 +57,7 @@
             android:textSize="16sp" />
 
         <EditText
-            android:id="@+id/username"
+            android:id="@+id/edUser"
             android:layout_height="wrap_content"
             android:layout_column="1"
             android:layout_marginLeft="10dp"
@@ -87,7 +87,7 @@
             android:textSize="16sp" />
 
         <EditText
-            android:id="@+id/password"
+            android:id="@+id/edPass"
             android:layout_height="wrap_content"
             android:layout_column="1"
             android:layout_marginLeft="10dp"
@@ -106,7 +106,7 @@
         >
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/btSign"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_span="2"
