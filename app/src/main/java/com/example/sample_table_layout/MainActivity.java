@@ -30,9 +30,16 @@ public class MainActivity extends AppCompatActivity {
                 nama = eduser.getText().toString(); //mindahin inputan dari Edittext ke String
                 password = edpassword.getText().toString();
 
+                if(nama.equals("uyun") && password.equals("123")){
+                    Toast t = Toast.makeText(getApplicationContext(), "Login Sukses!", Toast.LENGTH_LONG); //lengthlong?
+                    t.show();
+                }else {
+                    Toast b = Toast.makeText(getApplicationContext(), "Username atau Password salah!",Toast.LENGTH_LONG);
+                    b.show();
+                }
+
                 // bikin bubble message
-                Toast t = Toast.makeText(getApplicationContext(), "email anda : "+nama + " dan password anda : " + password, Toast.LENGTH_LONG); //lengthlong?
-                t.show();
+
 
             }
         });
