@@ -5,4 +5,11 @@
     <string name="tPassword">Password</string>
     <string name="login">Login</string>
     <string name="tLogo">Icon Login</string>
+    <string name="tData">Data Anda</string>
+    <string name="tUser">User : </string>
+    <string name="tPass">Password : </string>
+    <string name="txUser">Ini hasil Username </string>
+    <string name="txPass">Ini hasil Password </string>
+    <string name="label2">Login Berhasil!</string>
+
 </resources>
