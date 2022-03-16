@@ -11,5 +11,12 @@
     <string name="txUser">Ini hasil Username </string>
     <string name="txPass">Ini hasil Password </string>
     <string name="label2">Login Berhasil!</string>
+    <string name="mDaftar">Pendaftaran</string>
+    <string name="ldaftar">Daftar</string>
+    <string name="enama">Masukan Nama</string>
+    <string name="eemail">Masukan Email</string>
+    <string name="eoass">Masukan Password</string>
+    <string name="erepass">Masukan Password Kembali</string>
+    <string name="ealamat">Masukan Alamat</string>
 
 </resources>

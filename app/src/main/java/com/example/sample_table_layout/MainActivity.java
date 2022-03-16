@@ -2,10 +2,14 @@ package com.example.sample_table_layout;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 import android.widget.EditText;
+
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -14,6 +18,27 @@ public class MainActivity extends AppCompatActivity {
     String nama , password;
 
 
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        //method untuk menampilkan menu
+        getMenuInflater().inflate(R.menu.menu, menu);
+
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+
+        //buat manggil activitynya
+        if(item.getItemId() == R.id.mnDaftar){
+            Intent i = new Intent(getApplicationContext(), ActivityPendaftaran.class);
+            startActivity(i);
+
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
